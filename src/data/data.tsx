@@ -9,9 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
@@ -86,7 +84,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'src/data/assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -109,7 +107,7 @@ export const aboutData: About = {
   with clean, efficient, and impactful solutions.`,
   aboutItems: [
     {label: 'Location', text: 'Bhubaneswar, Odisha', Icon: MapIcon},
-    {label: 'Age', text: '21', Icon: CalendarIcon},
+    {label: 'Age', text: `${(new Date().getFullYear()) - 2005 + 1}`, Icon: CalendarIcon},
     {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
     {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
     {label: 'Study', text: 'Institute of Technical Education and Research, Bhubaneswar', Icon: AcademicCapIcon},
@@ -122,19 +120,27 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Core Programming Languages',
     skills: [
       {
-        name: 'English',
+        name: 'C',
+        level: 9,
+      },
+      {
+        name: 'C++',
+        level: 8,
+      },
+      {
+        name: 'Java',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Python',
+        level: 9,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'JavaScript',
+        level: 8,
       },
     ],
   },
@@ -142,16 +148,24 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
+        name: 'HTML5/CSS3',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'React.js',
+        level: 9,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Next.js',
+        level: 9,
+      },
+      {
+        name: 'JavaScript',
+        level: 8,
+      },
+      {
+        name: 'Typescript',
+        level: 8,
       },
     ],
   },
@@ -159,33 +173,33 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
+        name: 'Express.js',
+        level: 9,
+      },
+      {
         name: 'Node.js',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
+        name: 'Flask',
+        level: 8,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'AI / ML',
     skills: [
       {
-        name: 'React Native',
+        name: 'Tensorflow',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Scikit-Learn',
+        level: 8,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Pytorch',
+        level: 7,
       },
     ],
   },
@@ -196,70 +210,16 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'OncoShield',
+    description: 'A AI-driven non-invasive tumor detecting system',
+    url: 'https://github.com/sourav-625/oncoshield',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'CropScan IR',
+    description: 'A IR-imaging based crop monitoring system',
+    url: 'https://github.com/sourav-625/CropScan',
     image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
@@ -268,41 +228,25 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'July 2027',
+    location: 'Institute of Technical Education and Research, Bhubaneswar',
+    title: 'Bachelor of Technology(B.Tech)',
+    marks: 9.48,
+    content: <p></p>
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
-export const experience: TimelineItem[] = [
-  {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
+    date: 'March 2023',
+    location: 'Modern Public School, Balasore',
+    title: 'Higher Secondary Education (+2 Science)',
+    marks: 92.20,
+    content: <p></p>
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
+    date: 'April 2021',
+    location: 'Modern Public School, Balasore',
+    title: 'Matriculation',
+    marks: 91.60,
+    content: <p></p>,
   },
 ];
 
@@ -336,27 +280,32 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Message me here.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'k0259.mpsbls@gmail.com',
+      href: 'mailto:k0259.mpsbls@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Bhubaneswar, Odisha, india',
+      href: 'https://www.google.ca/maps/place/',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
+      type: ContactType.LinkedIn,
+      text: 'Sourav-Pati',
+      href: 'https://linkedin.com/',
+    },
+    {
+      type: ContactType.Twitter,
+      text: '@sourav-625',
       href: 'https://www.instagram.com/tbakerx/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'sourav-625',
+      href: 'https://github.com/sourav-625',
     },
   ],
 };

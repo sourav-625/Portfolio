@@ -2,8 +2,12 @@ import {FC, memo} from 'react';
 
 import {TimelineItem} from '../../../data/dataDef';
 
-const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
-  const {title, date, location, content} = item;
+const timelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
+  const {title, date, location, content, marks} = item;
+  let score = '';
+  if (marks) {
+    score = (marks / 10 < 1) ? `CGPA: ${marks} / 10` : `Percentile: ${marks} %`;
+  }
   return (
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
       <div className="flex flex-col pb-4">
@@ -13,11 +17,12 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
           <span>•</span>
           <span className="flex-1 text-sm sm:flex-none">{date}</span>
         </div>
+        <span className='flex-1 text-sm sm:flex-none'>{score}</span>
       </div>
       {content}
     </div>
   );
 });
 
-TimelineItem.displayName = 'TimelineItem';
-export default TimelineItem;
+timelineItem.displayName = 'TimelineItem';
+export default timelineItem;

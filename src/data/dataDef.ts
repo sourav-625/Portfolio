@@ -91,6 +91,7 @@ export interface TimelineItem {
   date: string;
   location: string;
   title: string;
+  marks?: number;
   content: JSX.Element;
 }
 
