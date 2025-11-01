@@ -84,7 +84,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'src/data/assets/resume.pdf',
+      href: 'https://drive.google.com/file/d/1XSGCimsnDePAkjo0V3489NzFQsvevcY1/view?usp=sharing',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -211,7 +211,7 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'OncoShield',
-    description: 'A AI-driven non-invasive tumor detecting system',
+    description: 'A AI-driven non-invasive tumor detection system',
     url: 'https://github.com/sourav-625/oncoshield',
     image: porfolioImage1,
   },
@@ -220,6 +220,18 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'A IR-imaging based crop monitoring system',
     url: 'https://github.com/sourav-625/CropScan',
     image: porfolioImage2,
+  },
+  {
+    title: 'Sourav-math-lib',
+    description: "A Java library providing advanced mathematical functions and tools",
+    url: 'https://github.com/sourav-625/sourav-math-lib',
+    image: porfolioImage3,
+  },
+  {
+    title: "Sudoku Game app",
+    description: "An online webapp built using the most basic HTML/CSS and JavaScript",
+    url: 'https://sourav-625.github.io/Sudoku-game/',
+    image: porfolioImage4,
   },
 ];
 
@@ -295,12 +307,12 @@ export const contact: ContactSection = {
     {
       type: ContactType.LinkedIn,
       text: 'Sourav-Pati',
-      href: 'https://linkedin.com/',
+      href: 'https://www.linkedin.com/in/sourav-pati-31189b307/',
     },
     {
       type: ContactType.Twitter,
       text: '@sourav-625',
-      href: 'https://www.instagram.com/tbakerx/',
+      href: 'https://x.com/SouravPati625',
     },
     {
       type: ContactType.Github,
@@ -315,6 +327,6 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sourav-625'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/sourav-pati-31189b307/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/SouravPati625'},
 ];
