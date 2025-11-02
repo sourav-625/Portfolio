@@ -35,8 +35,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Sourav Pati Portfolio',
+  description: "Software Developer || Desktop Application Developer || MERN Stack Engineer || AI/ML Engineer",
 };
 
 /**
@@ -116,20 +116,20 @@ export const skills: SkillGroup[] = [
     name: 'Core Programming Languages',
     skills: [
       {
+        name: 'Java',
+        level: 10,
+      },
+      {
+        name: 'Python',
+        level: 10,
+      },
+      {
         name: 'C',
         level: 9,
       },
       {
         name: 'C++',
         level: 8,
-      },
-      {
-        name: 'Java',
-        level: 10,
-      },
-      {
-        name: 'Python',
-        level: 9,
       },
       {
         name: 'JavaScript',
@@ -142,23 +142,23 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'HTML5/CSS3',
-        level: 9,
+        level: 10,
       },
       {
         name: 'React.js',
-        level: 9,
+        level: 10,
       },
       {
         name: 'Next.js',
-        level: 9,
+        level: 10,
       },
       {
         name: 'JavaScript',
-        level: 8,
+        level: 9,
       },
       {
         name: 'Typescript',
-        level: 8,
+        level: 9,
       },
     ],
   },
@@ -188,7 +188,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Scikit-Learn',
-        level: 8,
+        level: 9,
       },
       {
         name: 'Pytorch',
