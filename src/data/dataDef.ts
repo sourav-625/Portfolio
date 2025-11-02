@@ -47,7 +47,7 @@ export interface AboutItem {
   label: string;
   text: string;
   Icon?: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'>>;
-  styles?: {};
+  styles?: object;
 }
 
 /**

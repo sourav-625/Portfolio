@@ -102,7 +102,7 @@ export const aboutData: About = {
     {label: 'Location', text: 'Bhubaneswar, Odisha', Icon: MapIcon},
     {label: 'Age', text: `${(new Date().getFullYear()) - 2005 + 1}`, Icon: CalendarIcon},
     {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Anime, Movies, Gaming', Icon: SparklesIcon},
     {label: 'Study', text: 'Institute of Technical Education and Research, Bhubaneswar', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Not yet Employed', Icon: BuildingOffice2Icon, styles: {fontStyle: 'italic'}},
   ],
