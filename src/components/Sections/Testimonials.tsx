@@ -114,7 +114,7 @@ const Testimonials: FC = memo(() => {
 });
 
 const TestimonialSec: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
-  ({testimonial: {text, name, image}, isActive}) => (
+  ({testimonial: {text, image}, isActive}) => (
     <div
       className={classNames(
         'flex w-full shrink-0 snap-start snap-always flex-col items-start gap-y-4 p-2 transition-opacity duration-1000 sm:flex-row sm:gap-x-6',
@@ -130,7 +130,6 @@ const TestimonialSec: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
       )}
       <div className="flex flex-col gap-y-4">
         <p className="prose prose-sm font-medium italic text-white sm:prose-base">{text}</p>
-        <p className="text-xs italic text-white sm:text-sm md:text-base lg:text-lg">-- {name}</p>
       </div>
     </div>
   ),
