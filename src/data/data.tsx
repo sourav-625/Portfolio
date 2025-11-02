@@ -16,6 +16,8 @@ import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -203,6 +205,18 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'ML-based full-body diagnosis',
+    description: 'An application for aiding in full body checkup',
+    url: 'https://github.com/sourav-625/ML-based-full-body-diagnosis',
+    image: porfolioImage5,
+  },
+  {
+    title: 'FaceTrace',
+    description: 'An AI based individual face recognition system',
+    url: 'https://github.com/sourav-625/Person_recognition_Image_processing',
+    image: porfolioImage6,
+  },
+  {
     title: 'OncoShield',
     description: 'A AI-driven non-invasive tumor detection system',
     url: 'https://github.com/sourav-625/oncoshield',
@@ -222,7 +236,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: "Sudoku Game app",
-    description: "An online webapp built using the most basic HTML/CSS and JavaScript",
+    description: "An online webapp for sudoku lovers",
     url: 'https://sourav-625.github.io/Sudoku-game/',
     image: porfolioImage4,
   },
