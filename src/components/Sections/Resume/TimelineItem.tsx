@@ -6,7 +6,7 @@ const timelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
   const {title, date, location, content, marks} = item;
   let score = '';
   if (marks) {
-    score = (marks / 10 < 1) ? `CGPA: ${marks} / 10` : `Percentile: ${marks} %`;
+    score = (marks / 10 < 1) ? `CGPA: ${marks} / 10` : `Percentage: ${marks} %`;
   }
   return (
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
